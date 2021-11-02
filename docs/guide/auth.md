@@ -29,6 +29,11 @@
         "hardwareIdColumn": "hwidId",
         "serverIDColumn": "serverID"
       },
+      "textureProvider": {
+        "skinURL": "http://example.com/skins/%username%.png",
+        "cloakURL": "http://example.com/cloaks/%username%.png",
+        "type": "request"
+      },
       "isDefault": true,
       "displayName": "Default"
     }
@@ -47,6 +52,8 @@
 
 `passwordVerifier` - ваш PasswordVerifier см подробнее в [PasswordVerifier](/guide/auth.md#конфигурация-passwordverifier)
 
+`textureProvider` - отвечает за выдачу скинов и плащей [TextureProvider](/guide/auth.md#textureProvider)
+
 `table` - таблица  
 `tableHwid` - таблица c HWID
 `uuidColumn` - название столбца с uuid  
@@ -56,8 +63,35 @@
 `hardwareIdColumn` - название столбца с ID записи в таблице hwids  
 `serverIDColumn` - название столбца с serverID  
 
+## Система скинов и плащей (TextureProvider)
+
+### Способ Request
+
+В данном способе скины и плащи настраиваются всего двумя параметрами - маской URL на PNG-файл. Пример конфигурации:
+
+```json
+"textureProvider": {
+  "skinURL": "http://example.com/skins/%username%.png",
+  "cloakURL": "http://example.com/cloaks/%username%.png",
+  "type": "request"
+},
+```
+
+У данного способа есть существенный минус - нет поддержки slim скинов
+
+### Способ Json
+
+Готовая реализация выдачи скинов, плащей, слим скинов [php-скрипт](https://github.com/microwin7/GravitLauncher-TextureProvider) от микровина
+
+```json
+"textureProvider": {
+  "url": "https://example.com/TextureProvider.php?login=%uuid%",
+  "type": "json"
+},
+```
 
 ## Конфигурация PasswordVerifier
+
 <CodeGroup>
   <CodeGroupItem title="digest" active>
 
@@ -101,13 +135,12 @@
   </CodeGroupItem>
 </CodeGroup>
 
+`digest` - хеширует пароль выбранным алгоритмом. Поддерживаются любые алгоритмы, реализованные в Java или BouncyCastle  
+`doubleDigest` - хеширует пароль выбранным алгоритмом дважды. `toHexMode` перед вторым раундом хеширования переведет хеш в HEX формат. Поддерживаются любые алгоритмы, реализованные в Java или BouncyCastle  
+`bcrypt`(Модуль `AddionalHash`) - проверяет пароль по алгоритму BCrypt(password_verify в PHP)  
+`phpass`(Модуль `AddionalHash`) - проверяет пароль по алгоритму phpass(WordPress)  
 
-`digest` - хеширует пароль выбранным алгоритмом. Поддерживаются любые алгоритмы, реализованные в Java или BouncyCastle
-`doubleDigest` - хеширует пароль выбранным алгоритмом дважды. `toHexMode` перед вторым раундом хеширования переведет хеш в HEX формат. Поддерживаются любые алгоритмы, реализованные в Java или BouncyCastle
-`bcrypt`(Модуль `AddionalHash`) - проверяет пароль по алгоритму BCrypt(password_verify в PHP)
-`phpass`(Модуль `AddionalHash`) - проверяет пароль по алгоритму phpass(WordPress)
 ## Обработчики
-
 
 ### Обработчик MySQL
 
