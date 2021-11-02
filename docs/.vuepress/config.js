@@ -2,6 +2,7 @@ module.exports = {
   title: "GravitLauncher",
   description: "Хороший лаунчер майнкрафт для вашего проекта",
   bundler: '@vuepress/bundler-vite',
+  base: "/wiki/",
   themeConfig: {
     logo: "/logo.png",
     navbar: [
