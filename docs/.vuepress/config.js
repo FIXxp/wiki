@@ -35,4 +35,22 @@ module.exports = {
       ]
     },
   },
+  head:[
+    ['link', { rel: 'icon', href: '/logo.png' }],
+    ['link', { rel: 'manifest', href: '/manifest.webmanifest' }],
+    ['meta', { name: 'theme-color', content: '#3eaf7c' }],
+  ],
+  plugins: [
+    [
+      "@vuepress/plugin-google-analytics",
+      {
+        id: "G-2SBRZBC5WN",
+      },
+      'seo', { /* options */ },
+      '@vuepress/pwa',
+      {
+        skipWaiting: true,
+      },
+    ],
+  ],
 };
