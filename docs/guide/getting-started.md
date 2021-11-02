@@ -27,7 +27,7 @@ rm openjfx-17.0.0.1_linux-x64_bin-jmods.zip
     <CodeGroupItem title="ArchLinux">
 
 ```bash
-pacman -Syu jdk8-openjdk java8-openjfx jdk-openjdk java-openjfx
+pacman -Syu jdk-openjdk java-openjfx
 ```
 
   </CodeGroupItem>
@@ -77,7 +77,7 @@ curl -s https://mirror.gravit.pro/scripts/setup-dev.sh | sh
 **Шаг 4**: Запустите лаунчсервер командой:
 
 ```bash
-sh start.sh
+/usr/lib/jvm/java-17-openjdk-amd64/bin/java -javaagent:LaunchServer.jar -jar LaunchServer.jar;
 ```
 
 Лаунчсервер в интерактивном режиме запросит подробную информацию для настройки

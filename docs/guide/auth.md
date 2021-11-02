@@ -135,16 +135,55 @@
   </CodeGroupItem>
 </CodeGroup>
 
+
 `digest` - хеширует пароль выбранным алгоритмом. Поддерживаются любые алгоритмы, реализованные в Java или BouncyCastle  
 `doubleDigest` - хеширует пароль выбранным алгоритмом дважды. `toHexMode` перед вторым раундом хеширования переведет хеш в HEX формат. Поддерживаются любые алгоритмы, реализованные в Java или BouncyCastle  
 `bcrypt`(Модуль `AddionalHash`) - проверяет пароль по алгоритму BCrypt(password_verify в PHP)  
 `phpass`(Модуль `AddionalHash`) - проверяет пароль по алгоритму phpass(WordPress)  
 
-## Обработчики
+## Способы авторизации
 
-### Обработчик MySQL
+### Способ reject
+
+Принимает любые пары логин-пароль за неверные. Этот способ можно использовать во время проведения технических работ. Пример конфигурации:
+
+```json
+"auth": {
+    "std": {
+      "core": {
+      "type": "reject",
+      "isDefault": true,
+      "displayName": "Default"
+    }
+} 
+```
+
+### Способ  MySQL
 
 Этот обработчик хранит все данные об авторизациях в MySQL-базе данных, использует UUID готовые. Этот обработчик рекомендуется использовать всем проектам по мере возможности. Пример конфигурации:
+
+```json
+"auth": {
+    "std": {
+      "core": {
+        "type": "mysql",
+        "mySQLHolder": {
+          "address": "localhost",
+          "port": 3306,
+          "username": "launchserver",
+          "password": "password",
+          "database": "db?serverTimezone=UTC",
+          "timezone": "UTC",
+          "useHikari": true
+        },
+      },
+      "isDefault": true,
+      "displayName": "Default"
+    }
+} 
+```
+
+Для того чтобы добавить недостающие поля и сгеренерировать UUID, можно использовать SQL-запрос:
 
 ```sql
 
@@ -191,7 +230,7 @@ ALTER TABLE `users`
 ```
 <!-- ### Обработчик JSON -->
 
-### Обработчик FileAuthSystem
+### Способ FileAuthSystem
 
 Система пользователей с хранением данных в файле `.json`
 
