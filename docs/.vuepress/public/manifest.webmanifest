@@ -2,7 +2,7 @@
   "name": "GravitLauncher Wiki",
   "short_name": "GravitLauncher Wiki",
   "description": "Vue-powered Static Site Generator",
-  "start_url": "/index.html",
+  "start_url": "/wiki/index.html",
   "display": "standalone",
   "background_color": "#fff",
   "theme_color": "#3eaf7c",

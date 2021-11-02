@@ -2,6 +2,7 @@ module.exports = {
   title: "GravitLauncher",
   description: "Неплохой лаунчер майнкрафт для вашего проекта",
   bundler: '@vuepress/bundler-vite',
+  base: "/wiki/",
   themeConfig: {
     logo: "/logo.png",
     navbar: [
@@ -35,8 +36,8 @@ module.exports = {
     },
   },
   head:[
-    ['link', { rel: 'icon', href: '/logo.png' }],
-    ['link', { rel: 'manifest', href: '/manifest.webmanifest' }],
+    ['link', { rel: 'icon', href: '/wiki/logo.png' }],
+    ['link', { rel: 'manifest', href: '/wiki/manifest.webmanifest' }],
     ['meta', { name: 'theme-color', content: '#3eaf7c' }],
   ],
   plugins: [
