@@ -42,10 +42,6 @@ module.exports = {
   ],
   plugins: [
     [
-      "@vuepress/plugin-google-analytics",
-      {
-        id: "G-2SBRZBC5WN",
-      },
       'seo', { /* options */ },
       '@vuepress/pwa',
       {
