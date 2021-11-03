@@ -1,6 +1,6 @@
 {
-  "name": "GravitLauncher Wiki",
-  "short_name": "GravitLauncher Wiki",
+  "name": "GravitLauncher",
+  "short_name": "GravitLauncher",
   "description": "GravitLauncher - неплохой лаунчер для вашего проекта Minecraft",
   "start_url": "/index.html",
   "display": "standalone",
