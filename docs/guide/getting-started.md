@@ -1,21 +1,17 @@
 # Начало работы
 
-## Требования
-
-- [Java 17](https://nodejs.org/)
-
 ## Установка
 
 Этот раздел поможет вам создать лаунчсервер нуля. Если у вас уже установлена Java 17, начните с шага 3.
 
-**Шаг 1**: Установка Java 17
+**Шаг 1**: Установка Java 17 with JavaFX, curl, wget
 
 <CodeGroup>
   <CodeGroupItem title="Debian" active>
 
 ```bash
 apt-get update && apt-get upgrade
-apt-get install apt curl wget nftables openjdk-17-jdk 
+apt-get install apt curl wget openjdk-17-jdk 
 wget "https://download2.gluonhq.com/openjfx/17.0.0.1/openjfx-17.0.0.1_linux-x64_bin-jmods.zip"
 unzip openjfx-17.0.0.1_linux-x64_bin-jmods.zip
 cp javafx-jmods-17.0.0.1/* /usr/lib/jvm/java-17-openjdk-amd64/jmods
@@ -54,6 +50,10 @@ pacman -Syu jdk8-openjdk java8-openjfx
   </CodeGroupItem>
 </CodeGroup>
 
+:::tip
+Eсли у вас уже установлена Java 8 или сервера находсятся на другом сервере, то этот шаг можно пропустить т.к он служит для запуска игровых серверов до 1.16.5
+:::
+
 **Шаг 3**: Запустите скрипт установки в удобной для Вас директории:
 
 <CodeGroup>
@@ -90,3 +90,10 @@ curl -s https://mirror.gravit.pro/scripts/setup-dev.sh | sh
 ```bash
 stop
 ```  
+
+После выполнения данных действий, нужно будет:
+
+- настроить [авторизацию](auth.md)
+- [cобрать клиент](clients.md)
+- [привязать игровой сервер](servers.html#привязка-игрового-сервера) к лаунчсерверу
+- [настроить nginx](nginx.md)
