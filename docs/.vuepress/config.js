@@ -15,27 +15,31 @@ module.exports = {
         link: "https://github.com/GravitLauncher/Launcher",
       }
     ],
-    sidebar: {
-      '/guide/': [
-        {
-          text: 'Основы',
-          children: [
-            '/guide/getting-started.md',
-            '/guide/configuration.md',
-            '/guide/auth.md',
-            '/guide/clients.md',
-            '/guide/servers.md',
-            '/guide/commands.md',
-            '/guide/directory-structure.md',
-            '/guide/sign.md',
-            '/guide/nginx.md',
-            '/guide/protecthandler.md',
-          ],
-        },
-      ]
-    },
+    sidebar: [
+      {
+        text: 'Основы',
+        children: [
+          '/guide/getting-started.md',
+          '/guide/configuration.md',
+          '/guide/directory-structure.md',
+          '/guide/auth.md',
+          '/guide/runtime.md',
+          '/guide/nginx.md',
+          '/guide/clients.md',
+          '/guide/servers.md',
+          '/guide/commands.md',
+          '/guide/launchermodules.md',
+        ],
+      },
+      {
+        text: 'Для продвинутых',
+        children: [
+          '/guide/sign.md'
+        ],
+      }
+    ],
   },
-  head:[
+  head: [
     ['link', { rel: 'icon', href: '/wiki/logo.png' }],
     ['link', { rel: 'manifest', href: '/wiki/manifest.webmanifest' }],
     ['meta', { name: 'theme-color', content: '#3eaf7c' }],
