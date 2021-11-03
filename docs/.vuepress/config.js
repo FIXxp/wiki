@@ -1,5 +1,5 @@
 module.exports = {
-  title: "GravitLauncher",
+  title: "GravitLauncher Wiki",
   description: "Неплохой лаунчер майнкрафт для вашего проекта",
   bundler: '@vuepress/bundler-vite',
   lang: 'ru-RU',
