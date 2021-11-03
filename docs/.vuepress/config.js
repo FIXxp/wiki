@@ -4,6 +4,7 @@ module.exports = {
   bundler: '@vuepress/bundler-vite',
   base: "/wiki/",
   themeConfig: {
+    lastUpdated: false,
     contributors: false,
     logo: "/logo.png",
     navbar: [
