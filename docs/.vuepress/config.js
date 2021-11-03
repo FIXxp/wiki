@@ -1,7 +1,8 @@
 module.exports = {
-  title: "GravitLauncher",
+  title: "GravitLauncher - лаунчер Minecraft",
   description: "Неплохой лаунчер майнкрафт для вашего проекта",
   bundler: '@vuepress/bundler-vite',
+  lang: 'ru-RU',
   themeConfig: {
     lastUpdated: false,
     contributors: false,
