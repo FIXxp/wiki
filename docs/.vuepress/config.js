@@ -52,7 +52,6 @@ module.exports = {
       {
         id: 'G-2SBRZBC5WN',
       },
-      'seo', { /* options */ },
       '@vuepress/pwa',
       {
         skipWaiting: true,
