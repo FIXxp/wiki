@@ -42,8 +42,8 @@ module.exports = {
     ],
   },
   head: [
-    ['link', { rel: 'icon', href: '/wiki/logo.png' }],
-    ['link', { rel: 'manifest', href: '/wiki/manifest.webmanifest' }],
+    ['link', { rel: 'icon', href: '/logo.png' }],
+    ['link', { rel: 'manifest', href: '/manifest.webmanifest' }],
     ['meta', { name: 'theme-color', content: '#3eaf7c' }],
   ],
   plugins: [
