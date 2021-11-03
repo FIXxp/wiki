@@ -7,4 +7,5 @@ actions:
     link: /guide/getting-started.html
     type: primary
 footer: Copyright © 2021
+contributors: false
 ---
