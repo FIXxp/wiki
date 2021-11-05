@@ -161,9 +161,9 @@
   "std": {
     "core": {
       "type": "reject",
-      "isDefault": true,
-      "displayName": "Default"
-    }
+    },
+    "isDefault": true,
+    "displayName": "Default"
   } 
 }
 ```
@@ -177,9 +177,9 @@
   "std": {
     "core": {
       "type": "memory",
-      "isDefault": true,
-      "displayName": "Default"
-    }
+    },
+    "isDefault": true,
+    "displayName": "Default"
   } 
 }
 ```
