@@ -145,7 +145,6 @@
   </CodeGroupItem>
 </CodeGroup>
 
-
 `digest` - хеширует пароль выбранным алгоритмом. Поддерживаются любые алгоритмы, реализованные в Java или BouncyCastle  
 `doubleDigest` - хеширует пароль выбранным алгоритмом дважды. `toHexMode` перед вторым раундом хеширования переведет хеш в HEX формат. Поддерживаются любые алгоритмы, реализованные в Java или BouncyCastle  
 `bcrypt`(Модуль `AddionalHash`) - проверяет пароль по алгоритму BCrypt(password_verify в PHP)  
@@ -159,13 +158,30 @@
 
 ```json
 "auth": {
-    "std": {
-      "core": {
+  "std": {
+    "core": {
       "type": "reject",
       "isDefault": true,
       "displayName": "Default"
     }
-} 
+  } 
+}
+```
+
+### Способ Memory
+
+Не проверяет serverId,accessToken и пароль для входа
+
+```json
+"auth": {
+  "std": {
+    "core": {
+      "type": "memory",
+      "isDefault": true,
+      "displayName": "Default"
+    }
+  } 
+}
 ```
 
 ### Способ  MySQL
