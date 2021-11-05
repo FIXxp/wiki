@@ -42,7 +42,7 @@ module.exports = {
     ],
   },
   head: [
-    ['link', { rel: 'icon', href: '/logo.png' }],
+    ['link', { rel: 'icon', href: '/favicon.ico', type:'image/x-icon' }],
     ['link', { rel: 'shortcut icon', href: '/favicon.ico' }],
     ['link', { rel: 'manifest', href: '/manifest.webmanifest' }],
     ['meta', { name: 'theme-color', content: '#3eaf7c' }],
