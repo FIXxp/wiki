@@ -1,3 +1,7 @@
+---
+description: Настройка авторизации, AuthCoreProvider и TextureProvider
+---
+
 # Настройка авторизации
 
 ## Пример готовой конфигурации
