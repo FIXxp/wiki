@@ -54,6 +54,6 @@ module.exports = {
       {
         id: 'G-2SBRZBC5WN',
       }
-    ],
+    ]
   ],
 };

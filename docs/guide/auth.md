@@ -174,7 +174,8 @@ description: Настройка авторизации, AuthCoreProvider и Text
 
 ### Способ Memory
 
-Не проверяет serverId,accessToken и пароль для входа
+Подходит для тестирования.
+Не требует пароль для входа. 
 
 ```json
 "auth": {
