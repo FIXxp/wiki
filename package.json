@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "docs:clean": "rimraf docs/.vuepress/.temp docs/.vuepress/.cache docs/.vuepress/dist",
-    "docs:dev": "vuepress dev docs",
+    "docs:dev": "vuepress dev docs --debug",
     "docs:build": "vuepress build docs"
   },
   "author": "",
