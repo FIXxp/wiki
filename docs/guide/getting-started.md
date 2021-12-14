@@ -64,7 +64,7 @@ Eсли у вас уже установлена Java 8 или сервера н�
   <CodeGroupItem title="master" active>
 
 ```bash
-curl -s https://mirror.gravit.pro/scripts/setup-master.sh | bash 
+curl -s https://mirror.gravit.pro/scripts/setup-master.sh | sh
 ```
 
   </CodeGroupItem>
@@ -72,7 +72,7 @@ curl -s https://mirror.gravit.pro/scripts/setup-master.sh | bash
   <CodeGroupItem title="dev">
 
 ```bash
-curl -s https://mirror.gravit.pro/scripts/setup-dev.sh | bash
+curl -s https://mirror.gravit.pro/scripts/setup-dev.sh | sh
 ```
 
   </CodeGroupItem>
