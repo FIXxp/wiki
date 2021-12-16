@@ -175,7 +175,7 @@ description: Настройка авторизации, AuthCoreProvider и Text
 ### Способ Memory
 
 Подходит для тестирования.
-Не требует пароль для входа. 
+Не требует пароль для входа.
 
 ```json
 "auth": {
@@ -207,6 +207,17 @@ description: Настройка авторизации, AuthCoreProvider и Text
           "timezone": "UTC",
           "useHikari": true
         },
+        "passwordVerifier": {
+          "algo": "SHA256",
+          "type": "digest"
+        },
+        "table": "users",
+        "tableHwid": "hwids",
+        "uuidColumn": "uuid",
+        "usernameColumn": "username", 
+        "passwordColumn": "password",
+        "accessTokenColumn": "accessToken",
+        "serverIDColumn": "serverID"
       },
       "isDefault": true,
       "displayName": "Default"
@@ -259,7 +270,73 @@ ALTER TABLE `hwids`
 ALTER TABLE `users`
   ADD CONSTRAINT `users_hwidfk` FOREIGN KEY (`hwidId`) REFERENCES `hwids` (`id`);
 ```
-<!-- ### Обработчик JSON -->
+
+### Способ  PostgreSQL
+
+Этот обработчик хранит все данные об авторизациях в PostgreSQL-базе данных, использует UUID готовые.
+Пример конфигурации:
+
+```json
+"auth": {
+    "std": {
+      "core": {
+        "type": "postgresql",
+        "postgresSQLHolder": {
+          "addresses": ["localhost"],
+          "ports": [5432],
+          "username": "username",
+          "password": "password",
+          "database": "database",
+          "timezone": "UTC",
+          "useHikari": true
+        },
+        "passwordVerifier": {
+          "algo": "SHA256",
+          "type": "digest"
+        },
+        "table": "users",
+        "tableHwid": "hwids",
+        "uuidColumn": "uuid",
+        "usernameColumn": "username", 
+        "passwordColumn": "password",
+        "accessTokenColumn": "accessToken",
+        "serverIDColumn": "serverID"
+      },
+      "isDefault": true,
+      "displayName": "Default"
+    }
+} 
+```
+
+Для того чтобы добавить недостающие поля и сгеренерировать UUID, можно использовать SQL-запрос:
+
+```sql
+-- Добавляет недостающие поля в таблицу
+ALTER TABLE users
+ADD COLUMN uuid CHAR(36) UNIQUE DEFAULT NULL,
+ADD COLUMN accessToken CHAR(32) DEFAULT NULL,
+ADD COLUMN serverID VARCHAR(41) DEFAULT NULL;
+
+-- Добавляет расширение для генерации UUID
+CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
+-- Добавляет триггер для генерации UUID
+CREATE OR REPLACE FUNCTION public.users_uuid_trigger_func()
+    RETURNS trigger
+    LANGUAGE plpgsql
+AS $function$
+    BEGIN
+        new.uuid = (SELECT uuid_generate_v4());
+        return new;
+    END;
+$function$
+CREATE trigger users_uuid_trigger
+    BEFORE INSERT ON users
+    FOR EACH ROW
+    EXECUTE PROCEDURE users_uuid_trigger_func();
+
+-- Генерирует UUID для уже существующих пользователей
+UPDATE users SET uuid=(SELECT uuid_generate_v4()) WHERE uuid IS NULL;
+```
 
 ### Способ FileAuthSystem
 
