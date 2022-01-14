@@ -4,7 +4,7 @@ module.exports = {
   bundler: '@vuepress/bundler-vite',
   lang: 'ru-RU',
   themeConfig: {
-    lastUpdated: false,
+    // lastUpdated: false,
     contributors: false,
     logo: "/logo.png",
     navbar: [
@@ -76,6 +76,15 @@ module.exports = {
             placeholder: 'Поиск',
           }
         }
+      }
+    ],
+    [
+      '@stormbuf/vuepress-plugin-rss',
+      {
+        websiteDomain: 'https://gravit-launcher.ru/',
+        content: true,
+        protocol: "RSSv2",
+        count: 20
       }
     ]
   ],
