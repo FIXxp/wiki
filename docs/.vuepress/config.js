@@ -4,7 +4,7 @@ module.exports = {
   bundler: '@vuepress/bundler-vite',
   lang: 'ru-RU',
   themeConfig: {
-    lastUpdated: false,
+    // lastUpdated: false,
     contributors: false,
     logo: "/logo.avif",
     navbar: [
