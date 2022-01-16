@@ -149,18 +149,17 @@ html.dark {
   --c-border-dark: #34404c;
 
   // custom container colors
---c-tip: var(--c-brand);
+  --c-tip: var(--c-brand);
   --c-warning: #ceab00;
   --c-warning-bg: #2b313a;
-  --c-warning-title: #ceac03;
+  --c-warning-title: var(--c-text);
   --c-warning-text: #362e00;
   --c-danger: #940000;
   --c-danger-bg: #2b313a;
   --c-danger-title: #610000;
-  --c-danger-text: #3a0000;
+  --c-danger-text: var(--c-text);
   --c-details-bg: #2b313a;
 
-  --c-tip: var(--c-brand);
 
   // code blocks vars
   --code-hl-bg-color: #363b46;
