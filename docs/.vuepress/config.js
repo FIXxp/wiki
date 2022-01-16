@@ -5,6 +5,7 @@ module.exports = {
   lang: 'ru-RU',
   themeConfig: {
     // lastUpdated: false,
+    lastUpdatedText: 'Последнее обновление',
     contributors: false,
     logo: "/logo.avif",
     navbar: [
