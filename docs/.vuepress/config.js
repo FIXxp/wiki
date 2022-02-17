@@ -10,6 +10,11 @@ module.exports = {
     logo: "/logo.avif",
     navbar: [
       {
+        text: "BLACK MINECRAFT",
+        link: "https://discord.gg/XfcvVy2jSa",
+        target:'_self'
+      },
+      {
         text: "Discord",
         link: "https://discord.com/invite/b9QG4ygY75",
       },
