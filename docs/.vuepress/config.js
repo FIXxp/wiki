@@ -12,7 +12,8 @@ module.exports = {
       {
         text: "BLACK MINECRAFT",
         link: "https://discord.gg/XfcvVy2jSa",
-        target:'_self'
+        target:'_blank',
+        style: 'font-weight: bold;'
       },
       {
         text: "Discord",
