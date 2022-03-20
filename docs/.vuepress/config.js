@@ -18,7 +18,7 @@ module.exports = {
         link: "https://github.com/GravitLauncher/Launcher",
       },
       {
-        text: `v5.2.8`,
+        text: `v5.2.9`,
         children: [
           {
             text: 'Changelog',
