@@ -53,13 +53,10 @@ description: Настройка авторизации, AuthCoreProvider и Text
 `database` - база данных (до ?), после находится установка серверной таймзоны  
 `timezone` - установка клиентской таймзоны  
 `useHikari` - использовать ли HikariCP  
-
-`passwordVerifier` - ваш PasswordVerifier см подробнее в [PasswordVerifier](/guide/auth.md#конфигурация-passwordverifier)
-
-`textureProvider` - отвечает за выдачу скинов и плащей [TextureProvider](/guide/auth.md#textureProvider)
-
+`passwordVerifier` - ваш PasswordVerifier см подробнее в [PasswordVerifier](/guide/auth.md#конфигурация-passwordverifier)  
+`textureProvider` - отвечает за выдачу скинов и плащей [TextureProvider](/guide/auth.md#textureProvider)  
 `table` - таблица  
-`tableHwid` - таблица c HWID
+`tableHwid` - таблица c HWID  
 `uuidColumn` - название столбца с uuid  
 `usernameColumn` - название столбца с именами пользователей  
 `passwordColumn` - название столбца с паролем пользователя  
