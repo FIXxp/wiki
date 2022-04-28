@@ -1,9 +1,13 @@
+const { viteBundler } = require('vuepress')
+const { googleAnalyticsPlugin } = require('@vuepress/plugin-google-analytics')
+const { searchPlugin } = require('@vuepress/plugin-search')
+const { defaultTheme } = require('vuepress')
 module.exports = {
   title: "GravitLauncher Wiki",
   description: "Неплохой лаунчер майнкрафт для вашего проекта",
-  bundler: '@vuepress/bundler-vite',
+  bundler: viteBundler({}),
   lang: 'ru-RU',
-  themeConfig: {
+  theme: defaultTheme({
     // lastUpdated: false,
     lastUpdatedText: 'Последнее обновление',
     contributors: false,
@@ -60,7 +64,7 @@ module.exports = {
         ],
       }
     ],
-  },
+  }),
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico', type: 'image/x-icon' }],
     ['link', { rel: 'shortcut icon', href: '/favicon.ico' }],
@@ -73,21 +77,15 @@ module.exports = {
     links: {externalAttrs: { target: '_blank', rel: ''}}
   },
   plugins: [
-    [
-      '@vuepress/plugin-google-analytics',
-      {
-        id: 'G-2SBRZBC5WN',
-      }
-    ],
-    [
-      '@vuepress/plugin-search',
-      {
-        locales: {
-          '/': {
-            placeholder: 'Поиск',
-          }
+    googleAnalyticsPlugin({
+      id: 'G-2SBRZBC5WN'
+    }),
+    searchPlugin({
+      locales: {
+        '/': {
+          placeholder: 'Поиск',
         }
       }
-    ]
+    })
   ],
 };
