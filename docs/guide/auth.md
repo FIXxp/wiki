@@ -24,6 +24,7 @@ description: Настройка авторизации, AuthCoreProvider и Text
           "algo": "SHA256",
           "type": "digest"
         },
+        "expireSeconds": 7200,
         "table": "users",
         "tableHwid": "hwids",
         "uuidColumn": "uuid",
@@ -55,6 +56,7 @@ description: Настройка авторизации, AuthCoreProvider и Text
 `useHikari` - использовать ли HikariCP  
 `passwordVerifier` - ваш PasswordVerifier см подробнее в [PasswordVerifier](/guide/auth.md#конфигурация-passwordverifier)  
 `textureProvider` - отвечает за выдачу скинов и плащей [TextureProvider](/guide/auth.md#textureProvider)  
+`expireSeconds` - время работы accessToken (сек)
 `table` - таблица  
 `tableHwid` - таблица c HWID  
 `uuidColumn` - название столбца с uuid  
@@ -208,6 +210,7 @@ description: Настройка авторизации, AuthCoreProvider и Text
           "algo": "SHA256",
           "type": "digest"
         },
+        "expireSeconds": 7200,
         "table": "users",
         "tableHwid": "hwids",
         "uuidColumn": "uuid",
@@ -291,6 +294,7 @@ ALTER TABLE `users`
           "algo": "SHA256",
           "type": "digest"
         },
+        "expireSeconds": 7200,
         "table": "users",
         "tableHwid": "hwids",
         "uuidColumn": "uuid",

@@ -28,11 +28,11 @@ module.exports = {
         link: "https://github.com/GravitLauncher/Launcher",
       },
       {
-        text: `v5.2.9`,
+        text: `v5.2.11`,
         children: [
           {
             text: 'Changelog',
-            link: 'https://github.com/GravitLauncher/Launcher/releases/tag/v5.2.8',
+            link: 'https://github.com/GravitLauncher/Launcher/releases/tag/v5.2.11',
           },
           {
             text: 'v6.x',
