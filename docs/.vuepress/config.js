@@ -14,7 +14,7 @@ module.exports = {
     logo: "/logo.avif",
     navbar: [
       {
-        text: "GRAVIT CONFIG BUILDER [BETA]",
+        text: "GRAVIT CONFIG GENERATOR [BETA]",
         link: "https://config.gravit-launcher.ru/",
         target:'_blank',
       },
