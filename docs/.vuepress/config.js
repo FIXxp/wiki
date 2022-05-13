@@ -14,10 +14,14 @@ module.exports = {
     logo: "/logo.avif",
     navbar: [
       {
+        text: "GRAVIT CONFIG BUILDER [BETA]",
+        link: "https://config.gravit-launcher.ru/",
+        target:'_blank',
+      },
+      {
         text: "BLACK MINECRAFT",
         link: "https://discord.gg/XfcvVy2jSa",
         target:'_blank',
-        style: 'font-weight: bold;'
       },
       {
         text: "Discord",
