@@ -10,7 +10,7 @@ module.exports = {
   theme: defaultTheme({
     // lastUpdated: false,
     lastUpdatedText: 'Последнее обновление',
-    contributors: false,
+    contributors: true,
     logo: "/logo.avif",
     navbar: [
       {
