@@ -10,14 +10,9 @@ module.exports = {
   theme: defaultTheme({
     // lastUpdated: false,
     lastUpdatedText: 'Последнее обновление',
-    contributors: false,
+    contributors: true,
     logo: "/logo.avif",
     navbar: [
-      {
-        text: "GRAVIT CONFIG GENERATOR [BETA]",
-        link: "https://config.gravit-launcher.ru/",
-        target:'_blank',
-      },
       {
         text: "BLACK MINECRAFT",
         link: "https://discord.gg/XfcvVy2jSa",
@@ -65,6 +60,16 @@ module.exports = {
         text: 'Для продвинутых',
         children: [
           '/guide/sign.md'
+        ],
+      },
+      {
+        text: 'Что-то полезное',
+        children: [
+          '/guide/useful.md',
+          {
+            text: "Генератор конфигурации",
+            link: "https://config.gravit-launcher.ru/"
+          }
         ],
       }
     ],
