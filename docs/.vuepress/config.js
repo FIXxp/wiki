@@ -22,11 +22,11 @@ module.exports = {
         link: "https://github.com/GravitLauncher/Launcher",
       },
       {
-        text: `v5.2.11`,
+        text: `v5.2.12`,
         children: [
           {
             text: "Changelog",
-            link: "https://github.com/GravitLauncher/Launcher/releases/tag/v5.2.11",
+            link: "https://github.com/GravitLauncher/Launcher/releases/tag/v5.2.12",
           },
           {
             text: "v6.x",
@@ -62,6 +62,10 @@ module.exports = {
           {
             text: "Генератор конфигурации",
             link: "https://config.gravit-launcher.ru/",
+          },
+          {
+            text: "Список изменений",
+            link: "/guide/changelog.html",
           },
         ],
       },
