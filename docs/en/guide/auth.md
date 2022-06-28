@@ -54,8 +54,8 @@ description: Authorization setting, AuthcoreProvider and TextureProvider
 `database` - Database (before?), After the installation of server timezone is located  
 `timezone` - Installation of client timezones  
 `useHikari` - whether to use Hikaricp  
-`passwordVerifier` - your passwordverifier view more in[PasswordVerifier](/en/guide/auth.md#конфигурация-passwordverifier)  
-`textureProvider` - is responsible for the issuance of skins and cloaks [TextureProvider](/en/guide/auth.md#textureProvider)  
+`passwordVerifier` - your passwordverifier view more in[PasswordVerifier](/en/guide/auth.md#configuration-passwordverifier)  
+`textureProvider` - is responsible for the issuance of skins and cloaks [TextureProvider](/en/guide/auth.md#skins-and-cloak-system-textureprovider)  
 `expireSeconds` - Opening hours AcceStoken (sec)  
 `table` - table  
 `tableHwid` - Table with HWID  

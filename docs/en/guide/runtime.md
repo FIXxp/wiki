@@ -70,13 +70,13 @@ After you have changed the text in Compat files, use the NATIVE2ASCII utility to
 **RuntimeSecurityService** — Expecting keys with launa chief, collection of Hardwareinfo (HWID) and launcher update
 **MessageManager** — displays notifications and dialogs
 
-## Работа с .properties и перевод на другие языки
+## Work with .properties and translation into other languages
 
 You can translate the launcher into any other language by adding it to the language list in the Runtimesettings.java file.To do this, add your tongue to Enum Launcher_Locale.The first parameter is 2-3 letters of the country that will be used to search for. Properties file.The second parameter is the displayed name in a pop -up window for choosing languages.
 
 In addition to the inscriptions of. Properties, the files support the change in any properties of Javafx, including the sizes and location of the elements, the paths to the pictures, the parameters of objects and generally any properties that you can indicate in the .Fxml file
 
-## Отладка рантайма
+## Rantaim debugging
 
 To debug the Rantaim from IDEA, indicate the following parameters:
 

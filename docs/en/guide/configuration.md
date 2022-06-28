@@ -133,14 +133,14 @@ description: Description of the launcher configuration
 
 ### Description of configuration settings
 
-`projectName` - The name of your project
+`projectName` - The name of your project  
 `mirrors` - List of mirrors for downloading the game files.For detailed information, see the section [Download customers](/en/guide/clients)  
 `binaryName` - The name of the binary in the updates folder.Changing it, do not forget to change url jumps
-`copyBinaries` - Whether to place binary in the updates folder
+`copyBinaries` - Whether to place binary in the updates folder  
 `env`- environment affects the level of debugging messages
 `auth` - is responsible for the authorization and recoil of skins [Setting Authorization](/en/guide/auth)  
 `protectHandler` - is responsible for issuing tokens(accessToken) [Setting Protectler](/en/guide/configuration.md#настройка-protecthandler)  
-`sessions` - is responsible for storing sessions
+`sessions` - is responsible for storing sessions  
 `components` - Optional components
 
 - `regLimiter` -Registration restriction
@@ -245,4 +245,4 @@ Standard configuration without HardwareFeature
 }
 ```
 
-`profileWhitelist` - Whitelist`
+`profileWhitelist` - Whitelist
