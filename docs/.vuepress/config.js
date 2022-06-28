@@ -2,13 +2,34 @@ const { viteBundler } = require("vuepress");
 const { googleAnalyticsPlugin } = require("@vuepress/plugin-google-analytics");
 const { searchPlugin } = require("@vuepress/plugin-search");
 const { defaultTheme } = require("vuepress");
+const { sidebarRu, sidebarEn } = require("./configs/sidebar");
 module.exports = {
-  title: "GravitLauncher Wiki",
-  description: "Неплохой лаунчер майнкрафт для вашего проекта",
   bundler: viteBundler({}),
   lang: "ru-RU",
+  locales: {
+    "/": {
+      lang: "ru-RU",
+      title: "GravitLauncher Wiki",
+      description: "Неплохой лаунчер майнкрафт для вашего проекта",
+    },
+    "/en/": {
+      lang: "en-US",
+      title: "GravitLauncher Wiki",
+      description: "A good minecraft launcher for your project",
+    },
+  },
   theme: defaultTheme({
     // lastUpdated: false,
+    locales: {
+      "/": {
+        sidebar: sidebarRu,
+        selectLanguageName: "Русский",
+      },
+      "/en/": {
+        sidebar: sidebarEn,
+        selectLanguageName: "English",
+      },
+    },
     lastUpdatedText: "Последнее обновление",
     contributors: true,
     logo: "/logo.avif",
@@ -31,41 +52,6 @@ module.exports = {
           {
             text: "v6.x",
             link: "https://c.tenor.com/GryShD35-psAAAAC/troll-face-creepy-smile.gif",
-          },
-        ],
-      },
-    ],
-    sidebar: [
-      {
-        text: "Основы",
-        children: [
-          "/guide/getting-started.md",
-          "/guide/configuration.md",
-          "/guide/directory-structure.md",
-          "/guide/auth.md",
-          "/guide/runtime.md",
-          "/guide/nginx.md",
-          "/guide/clients.md",
-          "/guide/servers.md",
-          "/guide/commands.md",
-          "/guide/launchermodules.md",
-        ],
-      },
-      {
-        text: "Для продвинутых",
-        children: ["/guide/sign.md"],
-      },
-      {
-        text: "Что-то полезное",
-        children: [
-          "/guide/useful.md",
-          {
-            text: "Генератор конфигурации",
-            link: "https://config.gravit-launcher.ru/",
-          },
-          {
-            text: "Список изменений",
-            link: "/guide/changelog.html",
           },
         ],
       },
