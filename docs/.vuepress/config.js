@@ -11,11 +11,13 @@ module.exports = {
       lang: "ru-RU",
       title: "GravitLauncher Wiki",
       description: "Неплохой лаунчер майнкрафт для вашего проекта",
+      head: [["link", { rel: "manifest", href: "/manifest.webmanifest" }]],
     },
     "/en/": {
       lang: "en-US",
       title: "GravitLauncher Wiki",
       description: "A good minecraft launcher for your project",
+      head: [["link", { rel: "manifest", href: "/manifest_en.webmanifest" }]],
     },
   },
   theme: defaultTheme({
@@ -24,13 +26,13 @@ module.exports = {
       "/": {
         sidebar: sidebarRu,
         selectLanguageName: "Русский",
+        lastUpdatedText: "Последнее обновление",
       },
       "/en/": {
         sidebar: sidebarEn,
         selectLanguageName: "English",
       },
     },
-    lastUpdatedText: "Последнее обновление",
     contributors: true,
     logo: "/logo.avif",
     navbar: [
@@ -60,7 +62,6 @@ module.exports = {
   head: [
     ["link", { rel: "icon", href: "/favicon.ico", type: "image/x-icon" }],
     ["link", { rel: "shortcut icon", href: "/favicon.ico" }],
-    ["link", { rel: "manifest", href: "/manifest.webmanifest" }],
     ["meta", { name: "theme-color", content: "#6b72f2" }],
     ["meta", { name: "msapplication-TileColor", content: "#6b72f2" }],
     [
@@ -80,6 +81,9 @@ module.exports = {
       locales: {
         "/": {
           placeholder: "Поиск",
+        },
+        "/en/": {
+          placeholder: "Search",
         },
       },
     }),
