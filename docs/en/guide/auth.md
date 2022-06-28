@@ -150,7 +150,7 @@ Ready implementation of the issuance of skins, cloaks, Slim skins [php-script](h
 
 `digest` - Heshs the password with the selected algorithm.Any algorithms implemented in Java or BouncyCastle are supported  
 `doubleDigest` - Heshs the password with the selected algorithm twice. `toHexMode` Before the second round of the hash, the hash will transfer to HEX format.Any algorithms implemented in Java or BouncyCastle are supported  
-`bcrypt`(Module `AddionalHash`) - checks the password by algorithm BCrypt(password_verify в PHP)  
+`bcrypt`(Module `AddionalHash`) - checks the password by algorithm BCrypt(password_verify in PHP)  
 `phpass`(Module `AddionalHash`) - checks the password by algorithm phpass(WordPress)  
 
 ## Authorization methods

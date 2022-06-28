@@ -23,11 +23,11 @@
 
 #### Bug Fixes
 
-- Исправлена проблема с работой HWID на `MysqlAuthCoreProvider`
+- Fixed the problem with the work of HWID on `MysqlAuthCoreProvider`
 
 #### Features
 
-- New module `DiscordbotConsole` to replace the outdated and remote`discordintegration`
+- New module `DiscordbotConsole` to replace the outdated and remote `discordintegration`
 - Experimental support Forge 1.17+ (Follow the guide in our discord server)
 - New team for loading LWJGL 3.3.0+ in UNSAFECMMANDSPACK
 

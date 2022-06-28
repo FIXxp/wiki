@@ -10,8 +10,8 @@ To ensure the full-fledged work of LaunchServer and your game server, you need t
 
 **Step 1**: Select and download the server core you need on our [mirror](https://mirror.gravit-launcher.ru)
 
-**Step 2**: Place ServerWrapper(he is in the LaunchServer directory) to the Directory of your game server
-**Step 3**: Open the launcher and complete the next command, copy the resulting unique server indifier
+**Step 2**: Place ServerWrapper(he is in the LaunchServer directory) to the Directory of your game server  
+**Step 3**: Open the launcher and complete the next command, copy the resulting unique server indifier  
 
 ```bash
 token server <server-name>

@@ -139,7 +139,7 @@ description: Description of the launcher configuration
 `copyBinaries` - Whether to place binary in the updates folder  
 `env`- environment affects the level of debugging messages
 `auth` - is responsible for the authorization and recoil of skins [Setting Authorization](/en/guide/auth)  
-`protectHandler` - is responsible for issuing tokens(accessToken) [Setting Protectler](/en/guide/configuration.md#настройка-protecthandler)  
+`protectHandler` - is responsible for issuing tokens(accessToken) [Setting Protectler](/en/guide/configuration.md#setup-protecthandler)  
 `sessions` - is responsible for storing sessions  
 `components` - Optional components
 
@@ -221,7 +221,7 @@ Default Protecthandler
 
 ```json
 "protectHandler": {
-    "profileWhitelist": { "Ваш UUID профиля": ["Ник1", "Ник2"] }, 
+    "profileWhitelist": { "Your uuid profile": ["Nickname1", "Nickname2"] }, 
     "allowUpdates": [],
     "type": "std"
 }

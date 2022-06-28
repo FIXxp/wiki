@@ -2,7 +2,7 @@
 description: This section will help you create and configure the launchserver from scratch
 ---
 
-# Beginning of work
+# Getting Started
 
 ## Hosting choice
 
@@ -103,5 +103,5 @@ After performing these actions, you will need:
 
 - tune [Authorization](auth.md)
 - [Build game client](clients.md)
-- [Bind the game server](servers.html#привязка-игрового-сервера) To the launch server
+- [Bind the game server](servers.html#binding-of-a-game-server) To the launch server
 - [Configure Nginx](nginx.md)

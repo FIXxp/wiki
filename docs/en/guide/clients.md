@@ -197,7 +197,7 @@ The following is an example of a finished configuration for Minecraft 1.17.1
       ],
        "info": "Recipes", //Description
        "visible": true, //Visibility
-       "mark": true, //Included by defaultю
+       "mark": true, //Included by default
        "limited": false, //Limited permissions
        "permissions": 0, //Mask of privileges.0 - mod for all, 1 - only for admins.
        "name": "NotEnoughItems" //Name
@@ -259,7 +259,7 @@ The following is an example of a finished configuration for Minecraft 1.17.1
 ```json
 "triggersList": [
 {
-  "os": "MACOSX", // ОС: LINUX, MUSTDIE (it Windows), MACOSX
+  "os": "MACOSX", // OS: LINUX, MUSTDIE (it Windows), MACOSX
   "required": false,
   "inverted": false,
   "type": "os"

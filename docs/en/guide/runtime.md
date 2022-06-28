@@ -34,7 +34,7 @@ In this section, you will find useful functions that are included in the radar "
 
 Format: `Java {version number} b{assembly number} {mustdie (this is windows)/linux/macos} x{Disgusting} javafx {Availability javafx}`
 Add folders with your Jre/JDK assembly in `allowUpdates` launcher core confige: `"allowUpdates": ["java17-windows-64", "java17-windows-32"]`,
-Perform syncup и build
+Perform syncup and build
 Check the correctness of the work
 
 ## Runtime structure
@@ -57,9 +57,9 @@ Check the correctness of the work
 - Component —The contents that are not tied to something is liba.The component can exist in several copies at the same time, which differs from scenes and overlays
   
 You will need a program to edit FXML files JavaFX SceneBuilder, which you can download from any site convenient for you
-Then open the FXML file you are interested in, go inв Preview -> Internationalization -> Set Resourse And select the file runtime_*.properties
+Then open the FXML file you are interested in, go in Preview -> Internationalization -> Set Resourse And select the file runtime_*.properties
 
-To edit the text, you will need a `compat` folder, in which there are original .properties файлы. ***Change directly runtime _*.properties from the Runtime folder (Russian will not work)***
+To edit the text, you will need a `compat` folder, in which there are original .properties files. ***Change directly runtime _*.properties from the Runtime folder (Russian will not work)***
 After you have changed the text in Compat files, use the NATIVE2ASCII utility to bring a view that is in any JDK to be brought into a radio.
 
 ## Runtume objects

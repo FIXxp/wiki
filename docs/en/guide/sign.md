@@ -79,7 +79,7 @@ description: Launcher signature
     - In the configuration **LaunchServer.json** `"sign": { "enabled": true }`.
 3. The installed program **osslsigncode**.
 <CodeGroup>
-  <CodeGroupItem title="Debian-подобные системы" active>
+  <CodeGroupItem title="Debian-like systems" active>
 
 ```bash
 sudo apt install osslsigncode
@@ -155,7 +155,7 @@ We will create with the help of [XCA] (<https://github.com/chris2511/xca/release
 16. You have created a final certificate! It remains to export this certificate. Select your "Code Sign" certificate and press the "Export" button. Export format - "PKCS12 chain", choose the location yourself. Enter the password that your .p12 container will be encrypted. The password should not match the password from your database, it is unsafe. It is this password that you will indicate in the configuration in the signature
 Everything! You can already use. File ** _ ROOT_CA.CRT (your root certificate) copy to the Launchserver TrustStore folder. If desired, install it in your PC as a trusted certification center. And then you can configure the Jar/Exe signature by your certificate
 
-### Создание самоподписаного CA
+### Creation of self-signed CA
 
 Want to feel like a real expert? What would everything look as believable and seriously? Do you want not only to sign JAR/EXE, but in general anything where certificates are used? Then you here. You will need the same [xca] (<https://github.com/chris2511/xca/releases>)
 
