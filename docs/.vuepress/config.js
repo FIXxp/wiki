@@ -59,6 +59,10 @@ module.exports = {
     logo: "/logo.avif",
     navbar: [
       {
+        text: "Хостинг облачных VDS/VPS серверов",
+        link: "https://vdsina.ru/?partner=f15513zd48",
+      },
+      {
         text: "Discord",
         link: "https://discord.com/invite/b9QG4ygY75",
       },
@@ -74,8 +78,8 @@ module.exports = {
             link: "https://github.com/GravitLauncher/Launcher/releases/tag/v5.2.12",
           },
           {
-            text: "v6.x",
-            link: "https://c.tenor.com/GryShD35-psAAAAC/troll-face-creepy-smile.gif",
+            text: "v6.0.0",
+            link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
           },
         ],
       },
