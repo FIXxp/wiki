@@ -8,20 +8,22 @@ export const sidebarRu: SidebarConfig = [
       "/guide/configuration.md",
       "/guide/directory-structure.md",
       "/guide/auth.md",
-      "/guide/runtime.md",
       "/guide/nginx.md",
       "/guide/clients.md",
       "/guide/servers.md",
       "/guide/commands.md",
-      "/guide/launchermodules.md",
     ],
   },
   {
     text: "Для продвинутых",
-    children: ["/guide/sign.md"],
+    children: [
+      "/guide/sign.md",
+      "/guide/runtime.md",
+      "/guide/launchermodules.md"
+    ],
   },
   {
-    text: "Что-то полезное",
+    text: "Полезный материал",
     children: [
       "/guide/useful.md",
       {

@@ -8,40 +8,40 @@ description: Настройка авторизации, AuthCoreProvider и Text
 
 ```json
 "auth": {
-    "std": {
-      "core": {
-        "type": "mysql",
-        "mySQLHolder": {
-          "address": "localhost",
-          "port": 3306,
-          "username": "launchserver",
-          "password": "password",
-          "database": "db?serverTimezone=UTC",
-          "timezone": "UTC",
-          "useHikari": true
-        },
-        "passwordVerifier": {
-          "algo": "SHA256",
-          "type": "digest"
-        },
-        "expireSeconds": 7200,
-        "table": "users",
-        "tableHwid": "hwids",
-        "uuidColumn": "uuid",
-        "usernameColumn": "username",
-        "passwordColumn": "password",
-        "accessTokenColumn": "accessToken",
-        "hardwareIdColumn": "hwidId",
-        "serverIDColumn": "serverID"
-      },
-      "textureProvider": {
-        "skinURL": "http://example.com/skins/%username%.png",
-        "cloakURL": "http://example.com/cloaks/%username%.png",
-        "type": "request"
-      },
-      "isDefault": true,
-      "displayName": "Default"
-    }
+"std": {
+"core": {
+"type": "mysql",
+"mySQLHolder": {
+"address": "localhost",
+"port": 3306,
+"username": "launchserver",
+"password": "password",
+"database": "db?serverTimezone=UTC",
+"timezone": "UTC",
+"useHikari": true
+},
+"passwordVerifier": {
+"algo": "SHA256",
+"type": "digest"
+},
+"expireSeconds": 7200,
+"table": "users",
+"tableHwid": "hwids",
+"uuidColumn": "uuid",
+"usernameColumn": "username",
+"passwordColumn": "password",
+"accessTokenColumn": "accessToken",
+"hardwareIdColumn": "hwidId",
+"serverIDColumn": "serverID"
+},
+"textureProvider": {
+"skinURL": "https://example.com/skins/%username%.png",
+"cloakURL": "https://example.com/cloaks/%username%.png",
+"type": "request"
+},
+"isDefault": true,
+"displayName": "Default"
+}
 } 
 ```
 
@@ -84,9 +84,9 @@ description: Настройка авторизации, AuthCoreProvider и Text
 
 ```json
 "textureProvider": {
-  "skinURL": "http://example.com/skins/%username%.png",
-  "cloakURL": "http://example.com/cloaks/%username%.png",
-  "type": "request"
+"skinURL": "https://example.com/skins/%username%.png",
+"cloakURL": "https://example.com/cloaks/%username%.png",
+"type": "request"
 },
 ```
 
