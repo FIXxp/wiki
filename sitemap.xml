@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<url>
+  <loc>https://gravit-launcher.ru/</loc>
+  <lastmod>2022-06-28T13:34:40+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://gravit-launcher.ru/en/</loc>
+  <lastmod>2022-06-28T13:34:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gravit-launcher.ru/guide/getting-started.html</loc>
+  <lastmod>2022-06-28T13:34:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gravit-launcher.ru/en/guide/getting-started.html</loc>
+  <lastmod>2022-06-28T13:34:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://gravit-launcher.ru/guide/configuration.html</loc>
+  <lastmod>2022-06-28T13:34:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://gravit-launcher.ru/guide/directory-structure.html</loc>
+  <lastmod>2022-06-28T13:34:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://gravit-launcher.ru/guide/auth.html</loc>
+  <lastmod>2022-06-28T13:34:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://gravit-launcher.ru/guide/runtime.html</loc>
+  <lastmod>2022-06-28T13:34:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://gravit-launcher.ru/guide/nginx.html</loc>
+  <lastmod>2022-06-28T13:34:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://gravit-launcher.ru/guide/clients.html</loc>
+  <lastmod>2022-06-28T13:34:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://gravit-launcher.ru/guide/servers.html</loc>
+  <lastmod>2022-06-28T13:34:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://gravit-launcher.ru/guide/commands.html</loc>
+  <lastmod>2022-06-28T13:34:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://gravit-launcher.ru/guide/launchermodules.html</loc>
+  <lastmod>2022-06-28T13:34:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://gravit-launcher.ru/guide/sign.html</loc>
+  <lastmod>2022-06-28T13:34:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://gravit-launcher.ru/guide/useful.html</loc>
+  <lastmod>2022-06-28T13:34:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://gravit-launcher.ru/guide/changelog.html</loc>
+  <lastmod>2022-06-28T13:34:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://gravit-launcher.ru/guide/beget.html</loc>
+  <lastmod>2022-06-28T13:34:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://gravit-launcher.ru/en/guide/configuration.html</loc>
+  <lastmod>2022-06-28T13:34:40+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://gravit-launcher.ru/en/guide/directory-structure.html</loc>
+  <lastmod>2022-06-28T13:34:40+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://gravit-launcher.ru/en/guide/auth.html</loc>
+  <lastmod>2022-06-28T13:34:40+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://gravit-launcher.ru/en/guide/runtime.html</loc>
+  <lastmod>2022-06-28T13:34:40+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://gravit-launcher.ru/en/guide/nginx.html</loc>
+  <lastmod>2022-06-28T13:34:40+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://gravit-launcher.ru/en/guide/clients.html</loc>
+  <lastmod>2022-06-28T13:34:40+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://gravit-launcher.ru/en/guide/servers.html</loc>
+  <lastmod>2022-06-28T13:34:40+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://gravit-launcher.ru/en/guide/commands.html</loc>
+  <lastmod>2022-06-28T13:34:40+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://gravit-launcher.ru/en/guide/launchermodules.html</loc>
+  <lastmod>2022-06-28T13:34:40+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://gravit-launcher.ru/en/guide/sign.html</loc>
+  <lastmod>2022-06-28T13:34:40+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://gravit-launcher.ru/en/guide/useful.html</loc>
+  <lastmod>2022-06-28T13:34:40+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://gravit-launcher.ru/en/guide/changelog.html</loc>
+  <lastmod>2022-06-28T13:34:40+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://gravit-launcher.ru/guide/clients</loc>
+  <lastmod>2022-06-28T13:34:40+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://gravit-launcher.ru/guide/auth</loc>
+  <lastmod>2022-06-28T13:34:40+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://gravit-launcher.ru/guide/sign</loc>
+  <lastmod>2022-06-28T13:34:40+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://gravit-launcher.ru/en/guide/clients</loc>
+  <lastmod>2022-06-28T13:34:40+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://gravit-launcher.ru/en/guide/auth</loc>
+  <lastmod>2022-06-28T13:34:40+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://gravit-launcher.ru/en/guide/sign</loc>
+  <lastmod>2022-06-28T13:34:40+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+
+
+</urlset>

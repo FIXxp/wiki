@@ -1,0 +1,3 @@
+User-agent: *
+Host: gravit-launcher.ru
+Sitemap: https://gravit-launcher.ru/sitemap.xml

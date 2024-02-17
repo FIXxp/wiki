@@ -1,0 +1,1 @@
+const e={key:"v-4bccdb7f",path:"/en/guide/nginx.html",title:"Configuring Nginx",lang:"ru-RU",frontmatter:{description:"Configuring Nginx Proxy"},excerpt:"",headers:[],git:{updatedTime:1656422623e3,contributors:[{name:"FIXxp",email:"41650742+FIXxp@users.noreply.github.com",commits:1}]},filePathRelative:"en/guide/nginx.md"};export{e as data};
