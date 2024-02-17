@@ -23,24 +23,7 @@ module.exports = {
         ],
         ["link", { rel: "manifest", href: "/manifest.webmanifest" }],
       ],
-    },
-    "/en/": {
-      lang: "en-US",
-      title: "GravitLauncher Wiki",
-      description: "A good minecraft launcher for your project",
-      head: [
-        ["link", { rel: "icon", href: "/favicon.ico", type: "image/x-icon" }],
-        ["link", { rel: "shortcut icon", href: "/favicon.ico" }],
-        ["meta", { name: "theme-color", content: "#6b72f2" }],
-        ["meta", { name: "msapplication-TileColor", content: "#6b72f2" }],
-        [
-          "script",
-          { type: "text/javascript", async: "" },
-          '(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");ym(86283189, "init", {clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true});',
-        ],
-        ["link", { rel: "manifest", href: "/manifest_en.webmanifest" }],
-      ],
-    },
+    }
   },
   theme: defaultTheme({
     // lastUpdated: false,
@@ -49,17 +32,13 @@ module.exports = {
         sidebar: sidebarRu,
         selectLanguageName: "Русский",
         lastUpdatedText: "Последнее обновление",
-      },
-      "/en/": {
-        sidebar: sidebarEn,
-        selectLanguageName: "English",
-      },
+      }
     },
     contributors: true,
     logo: "/logo.avif",
     navbar: [
       {
-        text: "Хостинг облачных VDS/VPS серверов",
+        text: "VDS для лаунчера",
         link: "https://vdsina.ru/?partner=f15513zd48",
       },
       {
@@ -69,20 +48,7 @@ module.exports = {
       {
         text: "GitHub",
         link: "https://github.com/GravitLauncher/Launcher",
-      },
-      {
-        text: `v5.2.12`,
-        children: [
-          {
-            text: "Changelog",
-            link: "https://github.com/GravitLauncher/Launcher/releases/tag/v5.2.12",
-          },
-          {
-            text: "v6.0.0",
-            link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-          },
-        ],
-      },
+      }
     ],
   }),
   markdown: {
@@ -96,10 +62,7 @@ module.exports = {
       locales: {
         "/": {
           placeholder: "Поиск",
-        },
-        "/en/": {
-          placeholder: "Search",
-        },
+        }
       },
     }),
   ],
